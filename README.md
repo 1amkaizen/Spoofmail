@@ -104,6 +104,8 @@ perl -MNet::SSLeay -e 'print "$Net::SSLeay::VERSION\n"'
 ```
 perl -MIO::Socket::SSL -e 'print "$IO::Socket::SSL::VERSION\n"'
 ```
+**berhasil:**Jika versi berhasil dicetak, berarti instalasi berhasil. 
+
 **Coba SendEmail Lagi:**
 Setelah menginstal modul yang diperlukan, coba jalankan kembali SendEmail dan periksa apakah kesalahan masih terjadi.
 
