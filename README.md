@@ -52,7 +52,8 @@ Email Pengirim:
 Email Target: 
 Subject:  
 Pesan: 
-Header: 
+Header:
+TLS:
 ```
 
 # Penjelasan
@@ -60,12 +61,13 @@ Header:
 **Username:** Username yang di pakai mendaftar ke penyedia SMTP<br>
 **Password:** password yang di pakai untuk login ke penyedia SMTP<br>
 **SMTP-Server:** contohnya smtp.relay.brevo.com<br>
-**Port :** port smtp server
+**Port :** port smtp server<br>
 **Email Pengirim:** email yang di pakai untuk menyamar, contohnya presiden@gmail.com<br>
 **Email Target:** email target atau korban yang akan di kirimkan email<br>
 **Subject:**  Subject pesan<br>
 **Pesan:** isi pesannya<br>
 **Header:** header pesannya<br>
+**TLS:** pilih yes/no
 
 
 # Contoh
@@ -79,4 +81,5 @@ Email Target: target@gmail.com
 Subject: Review Aplikasi
 Pesan: Tolong review aplikasi ini: https.//aplikasi.com
 Header: From <presiden@gmail.com>
+TLS: yes
 ```
