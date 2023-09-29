@@ -1,29 +1,23 @@
 # Spoofmail
 
-# sebelum melakukan serangan kita harus tahu dulu email dari target kita.
-# misalkan disini saya ada target@gmail.com
+### sebelum melakukan serangan kita harus tahu dulu email dari target kita.
+**contoh :** misalkan disini saya ada target@gmail.com
 
-# skenario
-### pak presiden mengirim email ke pegawainya dan menyuruh untuk mereview aplikasi,yang dimana aplikasi itu adallah trojan
-### di sini pegawai adalah target kita atau korbannya,dan presiden adalah kita yang menyamar agar si pegawai percaya bahwa emal itu dai presiden
+**skenario :** pak presiden mengirim email ke pegawainya dan menyuruh untuk mereview aplikasi,yang dimana aplikasi itu adallah trojan.Di sini pegawai adalah target kita atau korbannya,dan presiden adalah kita yang menyamar agar si pegawai percaya bahwa emal itu dai presiden. 
 
-### - email pengirim
-**catatan :** Target akan menerima email dari email ini. 
+# Persiapan
+- Buat SMTP server
+- install sendemail
+- install Spoofmail
 
-presiden@gmail.com
-
-### - email penerima / target
-target@gmail.com
-
-
-# buat smtp server
-### untuk membuat SMTP server bisa di
+### buat smtp server
+**untuk membuat SMTP server bisa di :**
 - https://brevo.com
 - https://mailjet.com
 - https://microsoft.com
 - dll
 
-# Contoh SMTP server
+### Contoh SMTP server
   
   **Catatan :** disini saya menggunakan https://brevo.com.
  
@@ -32,8 +26,11 @@ target@gmail.com
 - Login : myemail@gmail.com
 - Password : mypassword
 
-
-### Install
+### Install sendemail
+```
+apt install sendemail
+```
+### Install Spoofmail
 ```
 git clone https://github.com/1amkaizen/Spoofmail/
 ```
@@ -44,14 +41,39 @@ cd Spoofmail
 ```
 ./spoofmail
 ```
+
 Kita akan di suruh memasukkan informasi berupa UserName, smtp server, dll
-'''
+```
+Username: 
+Password: 
+SMTP-Server: 
+Email Pengirim: 
+Email Target: 
+Subject:  
+Pesan: 
+Header: 
+```
+
+# Penjelasan
+
+**Username:** Username yang di pakai mendaftar ke penyedia SMTP<br>
+**Password:** password yang di pakai untuk login ke penyedia SMTP<br>
+**SMTP-Server:** contohnya smtp.relay.brevo.com<br>
+**Email Pengirim:** email yang di pakai untuk menyamar, contohnya presiden@gmail.com<br>
+**Email Target:** email target atau korban yang akan di kirimkan email<br>
+**Subject:**  Subject pesan<br>
+**Pesan:** isi pesannya<br>
+**Header:** header pesannya<br>
+
+
+# Contoh
+```
 Username: myemail@gmail.com
-Password: mypassword                                                           
-SMTP-Server: smtp-relay.brevo.co.                                                        
+Password: mypassword
+SMTP-Server: smtp-relay.brevo.com
 Email Pengirim: presiden@gmail.com
-Email Target: target@gmail.com                                                       
-Subject: Review Aplikasi                                                            
+Email Target: target@gmail.com
+Subject: Review Aplikasi
 Pesan: Tolong review aplikasi ini: https.//aplikasi.com
 Header: From <presiden@gmail.com>
-''
+```
