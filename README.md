@@ -85,6 +85,7 @@ TLS: yes
 ```
 
 # Konfigurasi tambahan untuk TLS
+# Install Net::SSLeay dan IO::Socket::SSL: 
 
 ```
 sudo cpan install Net::SSLeay
