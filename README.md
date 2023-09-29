@@ -46,7 +46,8 @@ Kita akan di suruh memasukkan informasi berupa UserName, smtp server, dll
 ```
 Username: 
 Password: 
-SMTP-Server: 
+SMTP-Server:
+Port:
 Email Pengirim: 
 Email Target: 
 Subject:  
@@ -59,6 +60,7 @@ Header:
 **Username:** Username yang di pakai mendaftar ke penyedia SMTP<br>
 **Password:** password yang di pakai untuk login ke penyedia SMTP<br>
 **SMTP-Server:** contohnya smtp.relay.brevo.com<br>
+**Port :** port smtp server
 **Email Pengirim:** email yang di pakai untuk menyamar, contohnya presiden@gmail.com<br>
 **Email Target:** email target atau korban yang akan di kirimkan email<br>
 **Subject:**  Subject pesan<br>
@@ -71,6 +73,7 @@ Header:
 Username: myemail@gmail.com
 Password: mypassword
 SMTP-Server: smtp-relay.brevo.com
+Port : 587
 Email Pengirim: presiden@gmail.com
 Email Target: target@gmail.com
 Subject: Review Aplikasi
