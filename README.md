@@ -85,7 +85,7 @@ TLS: yes
 ```
 
 # Konfigurasi tambahan untuk TLS
-# Install Net::SSLeay dan IO::Socket::SSL: 
+### Install Net::SSLeay dan IO::Socket::SSL: 
 
 ```
 sudo cpan install Net::SSLeay
@@ -94,5 +94,19 @@ sudo cpan install Net::SSLeay
 ```
 sudo cpan install IO::Socket::SSL
 ```
+
+Setelah menginstal modul Perl yang diperlukan, pastikan instalasi berhasil dengan menjalankan perintah-perintah berikut: 
+
+```
+perl -MNet::SSLeay -e 'print "$Net::SSLeay::VERSION\n"'
+```
+
+```
+perl -MIO::Socket::SSL -e 'print "$IO::Socket::SSL::VERSION\n"'
+```
+**Coba SendEmail Lagi:**
+Setelah menginstal modul yang diperlukan, coba jalankan kembali SendEmail dan periksa apakah kesalahan masih terjadi.
+
+Jika semua langkah di atas diikuti dengan benar dan modul Perl terinstal dengan sukses, seharusnya Anda dapat menggunakan SendEmail tanpa kesalahan terkait TLS.
 
 
