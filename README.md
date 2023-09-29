@@ -127,3 +127,13 @@ Setelah menginstal modul yang diperlukan, coba jalankan kembali SendEmail dan pe
 Jika semua langkah di atas diikuti dengan benar dan modul Perl terinstal dengan sukses, seharusnya Anda dapat menggunakan SendEmail tanpa kesalahan terkait TLS.
 
 
+# list SMTP Server
+### microsoft-365
+- Server SMTP : smtp.office365.com
+- Port : 587 (pelajari lebih lanjut tentang port SMTP )
+- Requires SSL : Ya
+- Requires TLS : Ya (jika tersedia)
+- Authentication : Ya (pilih Login jika tersedia beberapa pilihan)
+- Username : Alamat email lengkap Microsoft 365 Anda (misalnya nama@domainanda.com )
+- Password  : Kata sandi yang terkait dengan alamat email Microsoft 365 Anda. Anda atau admin Microsoft 365 Anda memasukkan kata sandi ini saat membuat akun email.
+
