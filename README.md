@@ -86,6 +86,15 @@ TLS: yes
 
 # Konfigurasi tambahan untuk TLS
 
+### Install lib yang di perlukan
+
+```
+sudo apt-get install libnet-ssleay-perl
+```
+```
+sudo apt-get install libcrypt-ssleay-perl
+```
+
 ### Install cpanm
 ```
 sudo apt-get install cpanminus
