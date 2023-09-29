@@ -85,6 +85,12 @@ TLS: yes
 ```
 
 # Konfigurasi tambahan untuk TLS
+
+### Install cpanm
+```
+sudo apt-get install cpanminus
+```
+
 ### Install Net::SSLeay dan IO::Socket::SSL: 
 
 ```
