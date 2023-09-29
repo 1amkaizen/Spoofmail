@@ -94,11 +94,11 @@ sudo apt-get install cpanminus
 ### Install Net::SSLeay dan IO::Socket::SSL: 
 
 ```
-sudo cpan install Net::SSLeay
+sudo cpanm install Net::SSLeay
 ```
 
 ```
-sudo cpan install IO::Socket::SSL
+sudo cpanm install IO::Socket::SSL
 ```
 
 Setelah menginstal modul Perl yang diperlukan, pastikan instalasi berhasil dengan menjalankan perintah-perintah berikut: 
