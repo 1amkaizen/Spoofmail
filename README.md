@@ -83,3 +83,15 @@ Pesan: Tolong review aplikasi ini: https.//aplikasi.com
 Header: From <presiden@gmail.com>
 TLS: yes
 ```
+
+# Konfigurasi tambahan untuk TLS
+
+```
+sudo cpan install Net::SSLeay
+```
+
+```
+sudo cpan install IO::Socket::SSL
+```
+
+
