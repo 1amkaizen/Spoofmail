@@ -1,0 +1,13 @@
+#!/bin/bash                                              
+# Ask the user for login details
+read -p 'Username: ' username                       
+read -p 'Password: ' password           
+read -p 'SMTP-Server: ' smtpserver
+read -p 'Port: ' port                                 
+read -p 'Email Pengirim: ' pengirim      
+read -p 'Email Target: ' target
+read -p 'Subject: ' subject                            
+read -p 'Pesan: ' pesan                  
+read -p 'Header: ' header
+read -p 'TLS:' tls                                                                                          
+sendemail -xu  $username -xp $password -s $smtpserver:$port -f $pengirim -t $target -u "$subject" -m "$pesan" -o message-header="$header" -o tls=$tls
